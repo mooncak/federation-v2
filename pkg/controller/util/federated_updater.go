@@ -89,7 +89,7 @@ func NewFederatedUpdater(federation FederationView, kind string, timeout time.Du
 func (fu *federatedUpdaterImpl) recordEvent(obj runtime.Object, eventType, reason, eventVerb string, args ...interface{}) {
 	// TODO(marun) Ensure the federated updater is logging events to
 	// objects in the federation api.  'Obj' is intended to appear in
-	// the member cluser, not the federation api.
+	// the member cluster, not the federation api.
 	//messageFmt := eventVerb + " %s %q in cluster %s"
 	//fu.eventRecorder.Eventf(obj, eventType, reason, eventType, messageFmt, args...)
 }
